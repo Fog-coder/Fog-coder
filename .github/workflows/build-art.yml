@@ -1,0 +1,44 @@
+name: Build profile art
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/build-art.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-art
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install deps
+        run: pip install -r scripts/requirements.txt
+      - name: Portrait (avatar -> ASCII)
+        run: |
+          python scripts/fetch_avatar.py
+          python scripts/prep_photo.py
+          python scripts/make_ascii_svg.py
+      - name: Info card
+        run: python scripts/make_info_card.py
+      - name: Contribution heatmap
+        run: |
+          python scripts/fetch_contributions.py
+          python scripts/render_heatmap_svg.py
+      - name: Commit art
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: rebuild profile art [skip ci]"
+          file_pattern: "avi-ascii.svg info-card.svg contrib-heatmap.svg data/contributions.json"
