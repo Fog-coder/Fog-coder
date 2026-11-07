@@ -17,6 +17,21 @@
 
 <br>
 
+<h3><code>fog@github ~ $ ls projects/</code></h3>
+
+<table>
+  <tr>
+    <td><b><a href="https://github.com/arbac-hq">arbac</a></b></td>
+    <td>studio building agentic products</td>
+  </tr>
+  <tr>
+    <td><b>Rubly</b></td>
+    <td>always-on AI agent that runs marketing for small and medium businesses · <i>building now</i></td>
+  </tr>
+</table>
+
+<br>
+
 <sub>Art regenerates daily via GitHub Actions · no tokens, no JS — animation lives inside the SVGs.</sub>
 
 </div>

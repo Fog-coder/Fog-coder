@@ -2,7 +2,7 @@
 """Render a neofetch-style info card SVG with staggered fade/slide-in rows.
 
 Output: info-card.svg
-Edit ROWS below (Prev / Highlights) with your real details.
+Edit ROWS below to change the card.
 """
 
 USER = "fog"
@@ -11,11 +11,13 @@ HOST = "github"
 # (key, value). key="" -> full-width value line; key=None -> blank spacer
 ROWS = [
     (None, ""),
-    ("Now", "side projects — padel-court-finder, World-Monitor, arb_bot"),
-    ("Prev", "<edit me: previous role / studies>"),
+    ("Now", "building Rubly @ arbac"),
+    ("Rubly", "always-on AI agent that runs marketing for SMBs"),
+    ("Study", "CS @ University of Milan · now @ UPV, Valencia"),
     ("Stack", "TypeScript · JavaScript · Python · Go · CSS"),
-    ("Focus", "web apps, bots, data monitoring"),
-    ("Highlights", "<edit me: a thing you're proud of>"),
+    ("Focus", "AI agents, bots, data monitoring"),
+    ("Highlights", "arb_bot · always-on arbitrage on prediction markets"),
+    ("OSS", "freellmapi (48k stars) · Codex /v1/responses support (#96)"),
     (None, ""),
 ]
 
