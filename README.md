@@ -21,7 +21,7 @@
 
 <table>
   <tr>
-    <td><b><a href="https://github.com/arbac-hq">arbac</a></b></td>
+    <td><b><a href="https://github.com/arbac-hq">Arbac</a></b></td>
     <td>studio building agentic products</td>
   </tr>
   <tr>
@@ -31,6 +31,12 @@
 </table>
 
 <br>
+
+<h3><code>fog@github ~ $ ./contact.sh</code></h3>
+
+<a href="https://x.com/fogcoder"><img src="https://img.shields.io/badge/X-@fogcoder-0d1117?style=flat-square&logo=x&logoColor=white&labelColor=0d1117" alt="X @fogcoder" /></a>
+
+<br><br>
 
 <sub>Art regenerates daily via GitHub Actions · no tokens, no JS — animation lives inside the SVGs.</sub>
 

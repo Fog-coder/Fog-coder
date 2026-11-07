@@ -11,7 +11,7 @@ HOST = "github"
 # (key, value). key="" -> full-width value line; key=None -> blank spacer
 ROWS = [
     (None, ""),
-    ("Now", "building Rubly @ arbac"),
+    ("Now", "building Rubly @ Arbac"),
     ("Rubly", "always-on AI agent that runs marketing for SMBs"),
     ("Study", "CS @ University of Milan · now @ UPV, Valencia"),
     ("Stack", "TypeScript · JavaScript · Python · Go · CSS"),
